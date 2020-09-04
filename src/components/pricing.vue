@@ -1,11 +1,11 @@
 <template>
   <div class="row">
-    <p class="text-center text-title" style="width:100%">About Us</p>
+    <p class="text-center text-title" style="width:100%; font-size:25px">Pricing</p>
 
     <v-col md="3">
       <v-card class="pa-2" style="border:none; background-color:transparent;" outlined tile>
         <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-          <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
+          <v-img height="250" src="@/image/4.png"></v-img>
 
           <v-card-title>Cafe Badilico</v-card-title>
 
@@ -50,7 +50,7 @@
     <v-col md="3">
       <v-card class="pa-2" style="border:none; background-color:transparent;" outlined tile>
         <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-          <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
+          <v-img height="250" src="@/image/1.png"></v-img>
 
           <v-card-title>Cafe Badilico</v-card-title>
 
@@ -95,7 +95,7 @@
     <v-col md="3">
       <v-card class="pa-2" style="border:none; background-color:transparent;" outlined tile>
         <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-          <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
+          <v-img height="250" src="@/image/6.png"></v-img>
 
           <v-card-title>Cafe Badilico</v-card-title>
 
@@ -140,7 +140,7 @@
     <v-col md="3">
       <v-card class="pa-2" style="border:none; background-color:transparent;" outlined tile>
         <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-          <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
+          <v-img height="250" src="@/image/5.png"></v-img>
 
           <v-card-title>Cafe Badilico</v-card-title>
 

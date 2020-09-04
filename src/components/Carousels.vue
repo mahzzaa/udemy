@@ -1,12 +1,13 @@
 <template>
-  <v-carousel class="carousel" cycle height="550" hide-delimiter-background show-arrows-on-hover>
-    <v-carousel-item v-for="(slide, i) in slides" :key="i">
-      <v-sheet :color="colors[i]" height="550">
-        <v-row class="fill-height" align="center" justify="center">
-          <div class="display-3">{{ slide }} Slide</div>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
+  <v-carousel>
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+      hide-delimiter-background
+      show-arrows-on-hover
+      cycle
+    ></v-carousel-item>
   </v-carousel>
 </template>
 
@@ -14,14 +15,24 @@
 export default {
   data() {
     return {
-      colors: [
-        "indigo",
-        "warning",
-        "pink darken-2",
-        "red lighten-1",
-        "deep-purple accent-4",
+      items: [
+        {
+          src:
+            "https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        },
+        {
+          src:
+            "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        },
+        {
+          src:
+            "https://images.unsplash.com/photo-1417733403748-83bbc7c05140?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+        },
+        {
+          src:
+            "https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
+        },
       ],
-      slides: ["First", "Second", "Third", "Fourth", "Fifth"],
     };
   },
 };
