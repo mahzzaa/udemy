@@ -32,6 +32,7 @@
         <options/>
         <about/>
         <course/>
+        <pricing/>
       </v-container>
     </v-main>
 
@@ -45,14 +46,16 @@
 import carousel from "./components/Carousels";
 import options from "./components/options";
 import course from "./components/course";
-import about from "./components/aboutUs"
+import about from "./components/aboutUs";
+import pricing from "./components/pricing"
 
 export default {
   components: {
     carousel,
     options,
     course,
-    about
+    about,
+    pricing
   },
 
   props: {
