@@ -24,6 +24,11 @@
     <v-app-bar app clipped-left>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title style="font-weight:300; font-size:25px; justify-content:center">Carol Course</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <p class="navbar-p">Home</p>
+      <p class="navbar-p">About</p>
+      <p class="navbar-p">Options</p>
+      <p class="navbar-p">Pricing</p>
     </v-app-bar>
 
     <v-main>
@@ -71,5 +76,8 @@ export default {
 </script>
 
 <style>
-
+.navbar-p{
+  margin: 5px;
+  padding-left: 20px;
+}
 </style>
