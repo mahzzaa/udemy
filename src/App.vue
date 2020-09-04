@@ -28,12 +28,11 @@
 
     <v-main>
       <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
-          <carousel/>
-
-          <br>
-          <br>
-        </v-row>
+        <carousel />
+        <br>
+        <br>
+        <br>
+        <options/>
       </v-container>
     </v-main>
 
@@ -44,10 +43,13 @@
 </template>
 
 <script>
-import carousel from "./components/Carousels"
+import carousel from "./components/Carousels";
+import options from "./components/options";
+
 export default {
-  components:{
+  components: {
     carousel,
+    options
   },
 
   props: {
@@ -61,3 +63,7 @@ export default {
   },
 };
 </script>
+
+<style>
+
+</style>
