@@ -8,9 +8,7 @@
     <br />
     <v-col md="7">
       <v-card class="pa-2" style="border:none; background-color:transparent;" outlined tile>
-        <p class="text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        </p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <ul class="list">
           <li class="list-item">
             <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
@@ -48,11 +46,11 @@ export default {};
   justify-content: start;
 }
 
-.list{
-    margin: 20px;
+.list {
+  margin: 20px;
 }
 
-.text-title{
-    padding: 20px;
+.text-title {
+  padding: 20px;
 }
 </style>

@@ -5,8 +5,8 @@
     </div>
     <v-row v-for="j in justify" :key="j" :justify="j">
       <v-col v-for="k in 6" :key="k" md="6">
-        <v-card class="pa-2" outlined tile>
-          <v-card class="mx-auto" height="50%">
+        <v-card class="pa-2" style="border:none;" outlined tile>
+          <v-card class="mx-auto"  height="50%">
             <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" height="200px"></v-img>
 
             <v-card-title>Top western road trips</v-card-title>
