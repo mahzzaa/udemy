@@ -29,10 +29,8 @@
     <v-main>
       <v-container class="fill-height" fluid>
         <carousel />
-        <br>
-        <br>
-        <br>
         <options/>
+        <course/>
       </v-container>
     </v-main>
 
@@ -45,11 +43,13 @@
 <script>
 import carousel from "./components/Carousels";
 import options from "./components/options";
+import course from "./components/course"
 
 export default {
   components: {
     carousel,
-    options
+    options,
+    course
   },
 
   props: {

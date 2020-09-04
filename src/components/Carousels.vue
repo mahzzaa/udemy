@@ -30,5 +30,6 @@ export default {
 <style>
 .carousel {
   padding-top: 0;
+  margin-bottom: 10px;
 }
 </style>
