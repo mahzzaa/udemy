@@ -2,7 +2,7 @@
   <div class="row">
     <v-row>
       <v-col v-for="n in 4" :key="n" cols="6" md="3">
-        <v-card class="pa-2" outlined tile style="margin:20px">
+        <v-card class="pa-2" outlined tile style="margin:10px">
           <v-card-title>
             <v-icon large left>mdi-twitter</v-icon>
             <span class="title font-weight-light">Twitter</span>
