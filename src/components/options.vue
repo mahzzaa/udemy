@@ -1,7 +1,11 @@
 <template>
   <div class="row">
+    <div class="title"  style="width:100%; margin-buttom:0;">
+      <p class="text-center text-option">Options of Page</p>
+    </div>
+
     <v-row>
-      <v-col v-for="n in 4" :key="n" cols="6" md="3">
+      <v-col v-for="n in 4" :key="n" cols="12"  md="3">
         <v-card class="pa-2" outlined tile style="margin:10px">
           <v-card-title>
             <v-icon large left>mdi-twitter</v-icon>
@@ -49,4 +53,11 @@ export default {
 </script>
 
 <style>
+.title{
+    margin: 15px;
+}
+
+.v-application p {
+    margin-bottom: 0px;
+}
 </style>
