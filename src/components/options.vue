@@ -6,15 +6,15 @@
 
     <v-row>
       <v-col v-for="n in 4" :key="n" cols="12" md="3">
-        <v-card class="pa-2" outlined tile style="margin:10px">
+        <v-card class="pa-2" outlined tile style="margin:10px" v-for="card in cards" :key="card">
           <v-card-title>
-            <v-icon large left>mdi-twitter</v-icon>
-            <span class="title font-weight-light">Twitter</span>
+          <v-icon large left>{{card.icon}}</v-icon>
+            <span class="title font-weight-light">{{card.iconTitle}}</span>
           </v-card-title>
 
           <v-card-text
             class="headline font-weight-bold"
-          >"Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well."</v-card-text>
+          >"{{card.detail}}"</v-card-text>
 
           <v-card-actions>
             <v-list-item class="grow">
@@ -47,7 +47,9 @@
 <script>
 export default {
   data: () => ({
-    //
+    cards:[
+      {icon:'mdi-twitter' , iconTitle:'twitter', detail:'Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.'}
+    ]
   }),
 };
 </script>

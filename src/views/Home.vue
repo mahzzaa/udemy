@@ -1,18 +1,83 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app id="inspire">
+    <v-navigation-drawer v-model="drawer" app :clipped="$vuetify.breakpoint.lgAndUp" temporary>
+      <v-list dense>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-view-dashboard</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Dashboard</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-cog</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Settings</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar app clipped-left>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-toolbar-title style="font-weight:300; font-size:25px; justify-content:center">Carol Course</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <p class="navbar-p">Home</p>
+      <p class="navbar-p">About</p>
+      <p class="navbar-p">Options</p>
+      <p class="navbar-p">Pricing</p>
+    </v-app-bar>
+
+    <v-main>
+      <v-container class="fill-height" fluid>
+        <carousel />
+        <options/>
+        <about/>
+        <course/>
+        <pricing/>
+      </v-container>
+    </v-main>
+
+    <v-footer app>
+      <span>&copy; {{ new Date().getFullYear() }}</span>
+    </v-footer>
+  </v-app>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import carousel from "../components/Carousels";
+import options from "../components/options";
+import course from "../components/course";
+import about from "../components/aboutUs";
+import pricing from "../components/pricing"
 
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
-  }
-}
+    carousel,
+    options,
+    course,
+    about,
+    pricing
+  },
+
+  props: {
+    source: String,
+  },
+  data: () => ({
+    drawer: null,
+  }),
+  created() {
+    this.$vuetify.theme.dark = true;
+  },
+};
 </script>
+
+<style>
+.navbar-p{
+  margin: 5px;
+  padding-left: 20px;
+}
+</style>
