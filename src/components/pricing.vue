@@ -10,7 +10,7 @@
             class="mx-auto my-12"
             max-width="374"
             v-for="price in prices"
-            :key="price"
+            :key="price.id"
           >
             <v-img height="250" v-bind:src="price.image"></v-img>
 

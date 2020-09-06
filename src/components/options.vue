@@ -6,7 +6,7 @@
 
     <v-row>
       <v-col cols="12" md="3">
-        <v-card class="pa-2" outlined tile style="margin:10px" v-for="card in cards" :key="card">
+        <v-card class="pa-2" outlined tile style="margin:10px" v-for="card in cards" :key="card.id">
           <v-card-title>
           <v-icon large left>{{card.icon}}</v-icon>
             <span class="title font-weight-light">{{card.iconTitle}}</span>

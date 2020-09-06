@@ -6,8 +6,8 @@
     <v-row>
       <v-col md="6">
         <v-card class="pa-2" style="border:none;" outlined tile>
-          <v-card class="mx-auto" height="50%" v-for="course in courses" :key="course">
-            <v-img src height="250px"></v-img>
+          <v-card class="mx-auto" height="50%" v-for="course in courses" :key="course.id">
+            <v-img :src="course.img" height="250px"></v-img>
 
             <v-card-title>{{course.title}}</v-card-title>
 
