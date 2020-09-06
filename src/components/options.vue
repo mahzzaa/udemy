@@ -5,7 +5,7 @@
     </div>
 
     <v-row>
-      <v-col v-for="n in 4" :key="n" cols="12" md="3">
+      <v-col cols="12" md="3">
         <v-card class="pa-2" outlined tile style="margin:10px" v-for="card in cards" :key="card">
           <v-card-title>
           <v-icon large left>{{card.icon}}</v-icon>
@@ -46,10 +46,9 @@
 
 <script>
 export default {
+  props:['cards'],
   data: () => ({
-    cards:[
-      {icon:'mdi-twitter' , iconTitle:'twitter', detail:'Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.'}
-    ]
+    
   }),
 };
 </script>

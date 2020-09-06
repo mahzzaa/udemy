@@ -34,10 +34,10 @@
     <v-main>
       <v-container class="fill-height" fluid>
         <carousel />
-        <options/>
-        <about/>
-        <course/>
-        <pricing/>
+        <options v-bind:cards="cards" />
+        <about />
+        <course v-bind:courses="courses" />
+        <pricing v-bind:prices="prices" />
       </v-container>
     </v-main>
 
@@ -52,7 +52,7 @@ import carousel from "../components/Carousels";
 import options from "../components/options";
 import course from "../components/course";
 import about from "../components/aboutUs";
-import pricing from "../components/pricing"
+import pricing from "../components/pricing";
 
 export default {
   components: {
@@ -60,7 +60,7 @@ export default {
     options,
     course,
     about,
-    pricing
+    pricing,
   },
 
   props: {
@@ -68,6 +68,56 @@ export default {
   },
   data: () => ({
     drawer: null,
+    cards: [
+      {
+        icon: "mdi-twitter",
+        iconTitle: "twitter",
+        detail:
+          "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
+      },
+      {
+        icon: "mdi-twitter",
+        iconTitle: "twitter",
+        detail:
+          "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
+      },
+    ],
+    prices: [
+      {
+        title: "Title",
+        rank: "450",
+        price: "20$",
+        location: "Italy",
+        course: "web",
+        detail:
+          "Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.",
+        classTime: "Tonight",
+        image: "../../assets/image/1.png",
+        minute: "20",
+        hour: "2",
+      },
+        {
+        title: "Title",
+        rank: "450",
+        price: "20$",
+        location: "Italy",
+        course: "web",
+        detail:
+          "Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.",
+        classTime: "Tonight",
+        image: "../../assets/image/1.png",
+        minute: "20",
+        hour: "2",
+      },
+    ],
+    courses: [
+      {
+        title: "course",
+        subtitle: "web course",
+        detail:
+          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+      },
+    ],
   }),
   created() {
     this.$vuetify.theme.dark = true;
@@ -76,7 +126,7 @@ export default {
 </script>
 
 <style>
-.navbar-p{
+.navbar-p {
   margin: 5px;
   padding-left: 20px;
 }
