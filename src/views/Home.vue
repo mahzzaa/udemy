@@ -4,18 +4,42 @@
       <v-list dense>
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-view-dashboard</v-icon>
+            <v-icon>mdi-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Dashboard</v-list-item-title>
+            <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-cog</v-icon>
+            <v-icon>mdi-human-handsup</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Settings</v-list-item-title>
+            <v-list-item-title>About Us</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-apple-keyboard-command</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Options</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-school</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Courses</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-action>
+            <v-icon>mdi-currency-usd</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Pricing</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -26,19 +50,49 @@
       <v-toolbar-title style="font-weight:300; font-size:25px; justify-content:center">Carol Course</v-toolbar-title>
       <v-spacer></v-spacer>
       <p class="navbar-p">
-        <a href="#sec-3" v-smooth-scroll="{duration:1000,offset:-50}">Home</a>
+        <a
+          href="#sec-3"
+          class="text-decoration-none"
+          style="color:white; "
+          v-show="$vuetify.breakpoint.lg"
+          v-smooth-scroll="{duration:1000,offset:-50}"
+        >Home</a>
       </p>
       <p class="navbar-p">
-        <a href="#aboutUs" v-smooth-scroll="{duration:1000,offset:-50}">About Us</a>
+        <a
+          href="#aboutUs"
+          class="text-decoration-none"
+          style="color:white; "
+          v-show="$vuetify.breakpoint.lg"
+          v-smooth-scroll="{duration:1000,offset:-50}"
+        >About Us</a>
       </p>
       <p class="navbar-p">
-        <a href="#options" v-smooth-scroll="{duration:2000,offset:-88}">Options</a>
+        <a
+          href="#options"
+          class="text-decoration-none"
+          style="color:white; "
+          v-show="$vuetify.breakpoint.lg"
+          v-smooth-scroll="{duration:2000,offset:-88}"
+        >Options</a>
       </p>
       <p class="navbar-p">
-        <a href="#sec-5" v-smooth-scroll="{duration:1000,offset:-50}">Courses</a>
+        <a
+          href="#sec-5"
+          class="text-decoration-none"
+          style="color:white; "
+          v-show="$vuetify.breakpoint.lg"
+          v-smooth-scroll="{duration:1000,offset:-50}"
+        >Courses</a>
       </p>
       <p class="navbar-p">
-        <a href="#sec-4" v-smooth-scroll="{duration:1000,offset:-50}">Pricing</a>
+        <a
+          href="#sec-4"
+          class="text-decoration-none"
+          style="color:white; "
+          v-show="$vuetify.breakpoint.lg"
+          v-smooth-scroll="{duration:1000,offset:-50}"
+        >Pricing</a>
       </p>
     </v-app-bar>
     <section id="sec-3"></section>
