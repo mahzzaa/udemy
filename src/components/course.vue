@@ -1,7 +1,7 @@
 <template>
   <v-container class="course">
+    <section id="sec-3"></section>
     <div class="title" style="width:100%; margin-buttom:10px;">
-      <section id="course"></section>
       <p class="text-center text-option">Courses</p>
     </div>
     <v-row>

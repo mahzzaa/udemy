@@ -25,12 +25,23 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <v-toolbar-title style="font-weight:300; font-size:25px; justify-content:center">Carol Course</v-toolbar-title>
       <v-spacer></v-spacer>
-      <p class="navbar-p">Home</p>
-      <p class="navbar-p"><a href="#aboutUs" v-smooth-scroll="{duration:1000,offset:-50}">About Us</a></p>
-      <p class="navbar-p"><a href="#options" v-smooth-scroll="{duration:2000,offset:-90}">Options</a></p>
-      <p class="navbar-p"><a href="#Course" v-smooth-scroll="{duration:2000,offset:-90}">Courses</a></p>
-      <p class="navbar-p">Pricing</p>
+      <p class="navbar-p">
+        <a href="#sec-3" v-smooth-scroll="{duration:1000,offset:-50}">Home</a>
+      </p>
+      <p class="navbar-p">
+        <a href="#aboutUs" v-smooth-scroll="{duration:1000,offset:-50}">About Us</a>
+      </p>
+      <p class="navbar-p">
+        <a href="#options" v-smooth-scroll="{duration:2000,offset:-88}">Options</a>
+      </p>
+      <p class="navbar-p">
+        <a href="#sec-5" v-smooth-scroll="{duration:1000,offset:-50}">Courses</a>
+      </p>
+      <p class="navbar-p">
+        <a href="#sec-4" v-smooth-scroll="{duration:1000,offset:-50}">Pricing</a>
+      </p>
     </v-app-bar>
+    <section id="sec-3"></section>
 
     <v-main>
       <v-container class="fill-height" fluid>

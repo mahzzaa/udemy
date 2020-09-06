@@ -1,5 +1,6 @@
 <template>
   <v-container>
+    <section id="sec-4"></section>
     <div class="row">
       <p class="text-center text-title" style="width:100%; font-size:25px">Pricing</p>
 
