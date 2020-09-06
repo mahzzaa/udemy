@@ -1,6 +1,6 @@
 <template>
   <v-container class="course">
-    <section id="sec-3"></section>
+    <section id="sec-5"></section>
     <div class="title" style="width:100%; margin-buttom:10px;">
       <p class="text-center text-option">Courses</p>
     </div>
