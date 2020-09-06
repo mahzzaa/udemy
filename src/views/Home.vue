@@ -26,8 +26,9 @@
       <v-toolbar-title style="font-weight:300; font-size:25px; justify-content:center">Carol Course</v-toolbar-title>
       <v-spacer></v-spacer>
       <p class="navbar-p">Home</p>
-      <p class="navbar-p">About</p>
-      <p class="navbar-p">Options</p>
+      <p class="navbar-p"><a href="#aboutUs" v-smooth-scroll="{duration:1000,offset:-50}">About Us</a></p>
+      <p class="navbar-p"><a href="#options" v-smooth-scroll="{duration:2000,offset:-90}">Options</a></p>
+      <p class="navbar-p"><a href="#Course" v-smooth-scroll="{duration:2000,offset:-90}">Courses</a></p>
       <p class="navbar-p">Pricing</p>
     </v-app-bar>
 
@@ -85,14 +86,14 @@ export default {
           "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
       },
       {
-        id: 2,
+        id: 3,
         icon: "mdi-twitter",
         iconTitle: "twitter",
         detail:
           "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
       },
       {
-        id: 2,
+        id: 4,
         icon: "mdi-twitter",
         iconTitle: "twitter",
         detail:
@@ -141,7 +142,7 @@ export default {
         img: Image,
       },
       {
-        id: 1,
+        id: 2,
         title: "course",
         subtitle: "web course",
         detail:
@@ -149,7 +150,7 @@ export default {
         img: Image,
       },
       {
-        id: 1,
+        id: 3,
         title: "course",
         subtitle: "web course",
         detail:
@@ -157,7 +158,7 @@ export default {
         img: Image,
       },
       {
-        id: 1,
+        id: 4,
         title: "course",
         subtitle: "web course",
         detail:
@@ -165,7 +166,7 @@ export default {
         img: Image,
       },
       {
-        id: 1,
+        id: 5,
         title: "course",
         subtitle: "web course",
         detail:
@@ -173,15 +174,7 @@ export default {
         img: Image,
       },
       {
-        id: 1,
-        title: "course",
-        subtitle: "web course",
-        detail:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image,
-      },
-      {
-        id: 1,
+        id: 6,
         title: "course",
         subtitle: "web course",
         detail:
@@ -199,6 +192,6 @@ export default {
 <style>
 .navbar-p {
   margin: 5px;
-  padding-left: 20px;
+  padding-right: 20px;
 }
 </style>

@@ -1,12 +1,13 @@
 <template>
   <v-container class="course">
     <div class="title" style="width:100%; margin-buttom:10px;">
+      <section id="course"></section>
       <p class="text-center text-option">Courses</p>
     </div>
     <v-row>
       <v-col md="6" v-for="course in courses" :key="course.id">
         <v-card class="pa-2" style="border:none;" outlined tile>
-          <v-card class="mx-auto" height="50%" >
+          <v-card class="mx-auto" height="50%">
             <v-img :src="course.img" height="250px"></v-img>
 
             <v-card-title>{{course.title}}</v-card-title>
@@ -41,7 +42,7 @@
 
 <script>
 export default {
-  props: ['courses'],
+  props: ["courses"],
   data: () => ({
     show: false,
   }),

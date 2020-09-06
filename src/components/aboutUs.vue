@@ -1,5 +1,6 @@
 <template>
   <div class="row">
+    <section id="aboutUs"></section>
     <p class="text-center text-title" style="width:100%">About Us</p>
     <p class="text-center justify-center">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus explicabo magni ipsam, saepe labore odio

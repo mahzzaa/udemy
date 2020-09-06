@@ -1,6 +1,7 @@
 <template>
   <div class="row">
     <div class="title" style="width:100%; margin-buttom:0;">
+      <section id="options"></section>
       <p class="text-center text-option">Options of Page</p>
     </div>
 
