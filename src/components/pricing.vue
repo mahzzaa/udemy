@@ -3,16 +3,10 @@
     <div class="row">
       <p class="text-center text-title" style="width:100%; font-size:25px">Pricing</p>
 
-      <v-col  md="4">
+      <v-col md="4" v-for="price in prices" :key="price.id">
         <v-card class="pa-2" style="border:none; background-color:transparent;" outlined tile>
-          <v-card
-            :loading="loading"
-            class="mx-auto my-12"
-            max-width="374"
-            v-for="price in prices"
-            :key="price.id"
-          >
-            <v-img height="250" v-bind:src="price.image"></v-img>
+          <v-card :loading="loading" class="mx-auto my-12" max-width="374">
+            <v-img height="250" v-bind:src="price.img"></v-img>
 
             <v-card-title>{{price.title}}</v-card-title>
 
@@ -59,7 +53,7 @@
 </template>
 <script>
 export default {
-  props:['prices'],
+  props: ["prices"],
   data: () => ({
     loading: false,
     selection: 1,

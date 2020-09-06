@@ -84,6 +84,20 @@ export default {
         detail:
           "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
       },
+      {
+        id: 2,
+        icon: "mdi-twitter",
+        iconTitle: "twitter",
+        detail:
+          "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
+      },
+      {
+        id: 2,
+        icon: "mdi-twitter",
+        iconTitle: "twitter",
+        detail:
+          "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
+      },
     ],
     prices: [
       {
@@ -99,6 +113,7 @@ export default {
         image: "../../assets/image/1.png",
         minute: "20",
         hour: "2",
+        img: Image,
       },
       {
         id: 2,
@@ -113,9 +128,58 @@ export default {
         image: "../../assets/image/1.png",
         minute: "20",
         hour: "2",
+        img: Image,
       },
     ],
     courses: [
+      {
+        id: 1,
+        title: "course",
+        subtitle: "web course",
+        detail:
+          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+        img: Image,
+      },
+      {
+        id: 1,
+        title: "course",
+        subtitle: "web course",
+        detail:
+          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+        img: Image,
+      },
+      {
+        id: 1,
+        title: "course",
+        subtitle: "web course",
+        detail:
+          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+        img: Image,
+      },
+      {
+        id: 1,
+        title: "course",
+        subtitle: "web course",
+        detail:
+          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+        img: Image,
+      },
+      {
+        id: 1,
+        title: "course",
+        subtitle: "web course",
+        detail:
+          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+        img: Image,
+      },
+      {
+        id: 1,
+        title: "course",
+        subtitle: "web course",
+        detail:
+          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
+        img: Image,
+      },
       {
         id: 1,
         title: "course",

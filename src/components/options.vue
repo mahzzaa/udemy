@@ -5,16 +5,14 @@
     </div>
 
     <v-row>
-      <v-col cols="12" md="3">
-        <v-card class="pa-2" outlined tile style="margin:10px" v-for="card in cards" :key="card.id">
+      <v-col cols="12" md="3" v-for="card in cards" :key="card.id">
+        <v-card class="pa-2" outlined tile style="margin:10px">
           <v-card-title>
-          <v-icon large left>{{card.icon}}</v-icon>
+            <v-icon large left>{{card.icon}}</v-icon>
             <span class="title font-weight-light">{{card.iconTitle}}</span>
           </v-card-title>
 
-          <v-card-text
-            class="headline font-weight-bold"
-          >"{{card.detail}}"</v-card-text>
+          <v-card-text class="headline font-weight-bold">"{{card.detail}}"</v-card-text>
 
           <v-card-actions>
             <v-list-item class="grow">
@@ -46,10 +44,8 @@
 
 <script>
 export default {
-  props:['cards'],
-  data: () => ({
-    
-  }),
+  props: ["cards"],
+  data: () => ({}),
 };
 </script>
 
