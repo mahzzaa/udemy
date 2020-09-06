@@ -120,6 +120,12 @@ import course from "../components/course";
 import about from "../components/aboutUs";
 import pricing from "../components/pricing";
 import Image from "../assets/image/1.png";
+import Image1 from "../assets/image/2.png";
+import Image2 from "../assets/image/3.png";
+import Image3 from "../assets/image/4.png";
+import Image4 from "../assets/image/5.png";
+import Image5 from "../assets/image/6.png";
+
 
 export default {
   components: {
@@ -179,7 +185,7 @@ export default {
         image: "../../assets/image/1.png",
         minute: "20",
         hour: "2",
-        img: Image,
+        img: Image1,
       },
       {
         id: 2,
@@ -194,7 +200,7 @@ export default {
         image: "../../assets/image/1.png",
         minute: "20",
         hour: "2",
-        img: Image,
+        img: Image2,
       },
     ],
     courses: [
@@ -204,7 +210,7 @@ export default {
         subtitle: "web course",
         detail:
           "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image,
+        img: Image1,
       },
       {
         id: 2,
@@ -212,7 +218,7 @@ export default {
         subtitle: "web course",
         detail:
           "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image,
+        img: Image2,
       },
       {
         id: 3,
@@ -220,7 +226,7 @@ export default {
         subtitle: "web course",
         detail:
           "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image,
+        img: Image3,
       },
       {
         id: 4,
@@ -228,7 +234,7 @@ export default {
         subtitle: "web course",
         detail:
           "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image,
+        img: Image4,
       },
       {
         id: 5,
@@ -236,7 +242,7 @@ export default {
         subtitle: "web course",
         detail:
           "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image,
+        img: Image5,
       },
       {
         id: 6,
