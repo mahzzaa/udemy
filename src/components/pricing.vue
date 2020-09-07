@@ -54,6 +54,8 @@
 </template>
 <script>
 import db from "@/fb";
+import Image1 from "../assets/image/2.png";
+
 
 export default {
   props: ["prices"],
