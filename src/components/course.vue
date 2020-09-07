@@ -5,7 +5,7 @@
       <p class="text-center text-option">Courses</p>
     </div>
     <v-row>
-      <v-col md="6" v-for="course in courses" :key="course.id">
+      <v-col md="6" >
         <v-card class="pa-2" style="border:none;" outlined tile>
           <v-card class="mx-auto" height="50%">
             <v-img :src="course.img" height="250px"></v-img>

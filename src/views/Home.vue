@@ -102,7 +102,9 @@
         <carousel />
         <options v-bind:cards="cards" />
         <about />
-        <course v-bind:courses="courses" />
+        <div v-for="course in courses" :key="course.id">
+          <course v-bind:courses="course" />
+        </div>
         <pricing v-bind:prices="prices" />
       </v-container>
     </v-main>
