@@ -41,11 +41,28 @@
 </template>
 
 <script>
+import db from '@/fb'
+
 export default {
   props: ["courses"],
   data: () => ({
     show: false,
   }),
+  created() {
+    this.$vuetify.theme.dark = true;
+    db.collection('courses').onSnapshot(res =>{
+      const changes = res.docChanges();
+
+      changes.forEach(change=>{
+        if (change.type === 'added'){
+          this.courses.push({
+            ...change.doc.data(),
+            id: change.doc.id
+          })
+        }
+      })
+    })
+  },
 };
 </script>
 

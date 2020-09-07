@@ -53,6 +53,8 @@
   </v-container>
 </template>
 <script>
+import db from "@/fb";
+
 export default {
   props: ["prices"],
   data: () => ({
@@ -66,6 +68,21 @@ export default {
 
       setTimeout(() => (this.loading = false), 2000);
     },
+  },
+  created() {
+    this.$vuetify.theme.dark = true;
+    db.collection('prices').onSnapshot((res) => {
+      const changes = res.docChanges();
+
+      changes.forEach((change) => {
+        if (change.type === "added") {
+          this.prices.push({
+            ...change.doc.data(),
+            id: change.doc.id,
+          });
+        }
+      });
+    });
   },
 };
 </script>

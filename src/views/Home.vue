@@ -126,7 +126,6 @@ import Image3 from "../assets/image/4.png";
 import Image4 from "../assets/image/5.png";
 import Image5 from "../assets/image/6.png";
 
-
 export default {
   components: {
     carousel,
@@ -171,88 +170,8 @@ export default {
           "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
       },
     ],
-    prices: [
-      {
-        id: 1,
-        title: "Title",
-        rank: "450",
-        price: "20$",
-        location: "Italy",
-        course: "web",
-        detail:
-          "Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.",
-        classTime: "Tonight",
-        image: "../../assets/image/1.png",
-        minute: "20",
-        hour: "2",
-        img: Image1,
-      },
-      {
-        id: 2,
-        title: "Title",
-        rank: "450",
-        price: "20$",
-        location: "Italy",
-        course: "web",
-        detail:
-          "Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.",
-        classTime: "Tonight",
-        image: "../../assets/image/1.png",
-        minute: "20",
-        hour: "2",
-        img: Image2,
-      },
-    ],
-    courses: [
-      {
-        id: 1,
-        title: "course",
-        subtitle: "web course",
-        detail:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image1,
-      },
-      {
-        id: 2,
-        title: "course",
-        subtitle: "web course",
-        detail:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image2,
-      },
-      {
-        id: 3,
-        title: "course",
-        subtitle: "web course",
-        detail:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image3,
-      },
-      {
-        id: 4,
-        title: "course",
-        subtitle: "web course",
-        detail:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image4,
-      },
-      {
-        id: 5,
-        title: "course",
-        subtitle: "web course",
-        detail:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image5,
-      },
-      {
-        id: 6,
-        title: "course",
-        subtitle: "web course",
-        detail:
-          "I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.",
-        img: Image,
-      },
-    ],
+    prices: [],
+    courses: [],
   }),
   created() {
     this.$vuetify.theme.dark = true;
