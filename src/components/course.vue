@@ -1,11 +1,9 @@
 <template>
   <v-container class="course">
     <section id="sec-5"></section>
-    <div class="title" style="width:100%; margin-buttom:10px;">
-      <p class="text-center text-option">Courses</p>
-    </div>
+    
     <v-row>
-      <v-col md="6" >
+      <v-col md="12">
         <v-card class="pa-2" style="border:none;" outlined tile>
           <v-card class="mx-auto" height="50%">
             <v-img :src="course.img" height="250px"></v-img>
@@ -43,7 +41,7 @@
 <script>
 
 export default {
-  props: ["courses"],
+  props: ["course"],
   data: () => ({
     show: false,
   })
