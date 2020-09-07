@@ -125,6 +125,7 @@ import Image2 from "../assets/image/3.png";
 import Image3 from "../assets/image/4.png";
 import Image4 from "../assets/image/5.png";
 import Image5 from "../assets/image/6.png";
+import db from "@/fb";
 
 export default {
   components: {
@@ -175,6 +176,31 @@ export default {
   }),
   created() {
     this.$vuetify.theme.dark = true;
+    db.collection("courses").onSnapshot((res) => {
+      const changes = res.docChanges();
+
+      changes.forEach((change) => {
+        if (change.type === "added") {
+          this.courses.push({
+            ...change.doc.data(),
+            id: change.doc.id,
+          });
+        }
+      });
+    });
+
+    db.collection("prices").onSnapshot((res) => {
+      const changes = res.docChanges();
+
+      changes.forEach((change) => {
+        if (change.type === "added") {
+          this.prices.push({
+            ...change.doc.data(),
+            id: change.doc.id,
+          });
+        }
+      });
+    });
   },
 };
 </script>
