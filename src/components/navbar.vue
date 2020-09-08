@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <v-app-bar color="deep-black accent-4" dense dark>
       <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
 
@@ -7,25 +7,24 @@
 
       <v-spacer></v-spacer>
 
-       <p class="navbar-p">
-         <router-link  to="/">Home</router-link>
+      <p class="hidden-sm-and-down " style="margn:5px; padding-right:20px; text-decoration:none">
+        <router-link to="/" style="text-decoration:none;  color: antiquewhite;">Home</router-link>
       </p>
 
-       <p class="navbar-p">
-         <router-link  to="/about">About Us</router-link>
+      <p class="hidden-sm-and-down " style="margn:5px; padding-right:20px; text-decoration:none">
+        <router-link to="/about" style="text-decoration:none;  color: antiquewhite;">About Us</router-link>
       </p>
 
-      
-       <p class="navbar-p">
-        <router-link  to="/course">Courses</router-link>
+      <p class="hidden-sm-and-down " style="margn:5px; padding-right:20px; text-decoration:none">
+        <router-link to="/course" style="text-decoration:none;  color: antiquewhite;">Courses</router-link>
       </p>
-      
-       <p class="navbar-p">
-        <router-link  to="/pricing">Pricing</router-link>
+
+      <p class="hidden-sm-and-down " style="margn:5px; padding-right:20px; text-decoration:none">
+        <router-link to="/pricing" style="text-decoration:none;  color: antiquewhite;">Pricing</router-link>
       </p>
-      
-       <p class="navbar-p">
-        <router-link  to="/option">Option</router-link>
+
+      <p class="hidden-sm-and-down " style="margn:5px; padding-right:20px; text-decoration:none">
+        <router-link to="/option" style="text-decoration:none;  color: antiquewhite;">Option</router-link>
       </p>
 
       <v-menu left bottom>
@@ -37,19 +36,29 @@
 
         <v-list>
           <v-list-item @click="() => {}">
-            <v-list-item-title> <router-link  to="/">Home</router-link></v-list-item-title>
+            <v-list-item-title>
+              <router-link to="/" style="text-decoration:none;  color: antiquewhite;">Home</router-link>
+            </v-list-item-title>
           </v-list-item>
           <v-list-item @click="() => {}">
-            <v-list-item-title> <router-link  to="/about">About Us</router-link></v-list-item-title>
+            <v-list-item-title>
+              <router-link to="/about" style="text-decoration:none;  color: antiquewhite;">About Us</router-link>
+            </v-list-item-title>
           </v-list-item>
           <v-list-item @click="() => {}">
-            <v-list-item-title> <router-link  to="/course">Courses</router-link></v-list-item-title>
+            <v-list-item-title>
+              <router-link to="/course" style="text-decoration:none;  color: antiquewhite;">Courses</router-link>
+            </v-list-item-title>
           </v-list-item>
           <v-list-item @click="() => {}">
-            <v-list-item-title> <router-link  to="/pricing">Pricing</router-link></v-list-item-title>
+            <v-list-item-title>
+              <router-link to="/pricing" style="text-decoration:none;  color: antiquewhite;">Pricing</router-link>
+            </v-list-item-title>
           </v-list-item>
           <v-list-item @click="() => {}">
-            <v-list-item-title> <router-link  to="/option">Option</router-link></v-list-item-title>
+            <v-list-item-title>
+              <router-link to="/option" style="text-decoration:none;  color: antiquewhite;">Option</router-link>
+            </v-list-item-title>
           </v-list-item>
         </v-list>
       </v-menu>
@@ -73,9 +82,11 @@ export default {
 };
 </script>
 
-<style>
-.navbar-p {
+<style scoped>
+#navbar-p {
   margin: 5px;
   padding-right: 20px;
+  color: antiquewhite;
+  text-decoration: none;
 }
 </style>
