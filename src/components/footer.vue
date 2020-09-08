@@ -1,26 +1,9 @@
 <template>
-  <v-app id="inspire">
-    <section id="sec-3"></section>
-
-    <v-main>
-      <v-container class="fill-height" fluid>
-        <carousel />
-        <options v-bind:cards="cards" />
-        <about />
-        <div class="title" style="width:100%; margin-buttom:10px;">
-          <p class="text-center text-option">Courses</p>
-        </div>
-        <div v-for="course in courses" :key="course.id">
-          <course v-bind:course="course" />
-        </div>
-        <pricing v-bind:prices="prices" />
-      </v-container>
-    </v-main>
-
-    <!-- <v-footer app>
+  <v-container>
+    <v-footer app>
       <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer> -->
-  </v-app>
+    </v-footer>
+  </v-container>
 </template>
 
 <script>
