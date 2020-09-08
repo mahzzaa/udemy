@@ -29,7 +29,6 @@
 
       <v-menu left bottom>
         <template v-slot:activator="{ on, attrs }" >
-          <v-btn icon v-bind="attrs" v-on="on" class="hidden-lg-and-up" >
           <v-btn icon v-bind="attrs" v-on="on" class="hidden-md-and-up" >
             <v-icon >mdi-dots-vertical</v-icon>
           </v-btn>
