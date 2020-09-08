@@ -29,7 +29,7 @@
 
       <v-menu left bottom>
         <template v-slot:activator="{ on, attrs }" >
-          <v-btn icon v-bind="attrs" v-on="on" class="hidden-lg-and-down " >
+          <v-btn icon v-bind="attrs" v-on="on" class="hidden-lg" >
             <v-icon >mdi-dots-vertical</v-icon>
           </v-btn>
         </template>
