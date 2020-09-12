@@ -4,7 +4,7 @@
       <v-col col-sm-12 col-md-8 col-lg-8>
         <v-card>
           <v-container>
-            <div class="hidden-md-and-up">
+            <div class="hidden-md-and-down">
               <video-embed src="https://www.youtube.com/watch?v=s4ObxcdXoFE"></video-embed>
             </div>
             <ul class="listItem">
@@ -71,26 +71,89 @@
       </v-col>
     </v-row>
     <div class="row">
-      <div class="col-8">
-        <v-card class="mx-auto" outlined>
+      <div class="col-sm-3">
+        <v-card outlined class="mx-auto my-12" max-width="374">
+          <video-embed src="https://www.youtube.com/watch?v=s4ObxcdXoFE" width="374"></video-embed>
+
+          <v-card-title>£59.99</v-card-title>
+
+          <v-card-text>
+            <v-row align="center" class="mx-0">
+              <div class="pb-3">
+                <v-btn>Add To Wishlist</v-btn>
+              </div>
+              <div class="pb-3">
+                <v-btn>share</v-btn>
+              </div>
+            </v-row>
+
+            <div class="my-4 subtitle-1 text-center">30-Day Money-Back Guarantee</div>
+
+            <div>
+              <span>This course includes:</span>
+              <ul id="option1">
+                <li>
+                  <i class="fab fa-youtube pr-3"></i>
+                  <span>12 hours on-demand video</span>
+                </li>
+                <li>
+                  <i class="fas fa-download pr-3"></i>
+                  <span class="pl-1">8 downloadable resources</span>
+                </li>
+                <li>
+                  <i class="fas fa-infinity pr-3"></i>
+                  <span>Full lifetime access</span>
+                </li>
+                <li>
+                  <i class="fas fa-mobile pr-3"></i>
+                  <span class="pl-2">Access on mobile and TV</span>
+                </li>
+                <li>
+                  <i class="fas fa-award pr-3"></i>
+                  <span class="pl-2">Certificate of completion</span>
+                </li>
+              </ul>
+            </div>
+          </v-card-text>
+          <!-- 
+          <v-divider class="mx-4"></v-divider>-->
+
+          <v-card-actions>
+            <v-btn color="deep-purple lighten-2" text-center>Apply Coupon</v-btn>
+          </v-card-actions>
+        </v-card>
+      </div>
+      <div class="col-sm-9 mt-12">
+        <v-card outlined>
           <v-list-item three-line>
             <v-list-item-content>
               <v-list-item-title class="headline mb-1">What you'll learn</v-list-item-title>
               <v-list-item>
-                <ul id="option">
-                  <li>Which ASP .NET Core Project Is Best For You</li>
-                  <li>MVC</li>
-                  <li>Blazor Server</li>
-                  <li>Razor Pages</li>
-                  <li>API</li>
-                  <li>Blazor Web Assembly / Client</li>
-                </ul>
+                <div>
+                  <div class="col-sm-6 col-xs-6">
+                    <i class="fas fa-check pr-3"></i>Which ASP .NET Core Project Is Best For You
+                  </div>
+                  <div class="col-sm-6 col-xs-6">
+                    <i class="fas fa-check pr-3"></i>MVC
+                  </div>
+                  <div class="col-sm-6 col-xs-6">
+                    <i class="fas fa-check pr-3"></i>Blazor Server
+                  </div>
+                  <div class="col-sm-6 col-xs-6">
+                    <i class="fas fa-check pr-3"></i>Razor Pages
+                  </div>
+                  <div class="col-sm-6 col-xs-6">
+                    <i class="fas fa-check pr-3"></i>API
+                  </div>
+                  <div class="col-sm-6 col-xs-6">
+                    <i class="fas fa-check pr-3"></i>Blazor Web Assembly / Client
+                  </div>
+                </div>
               </v-list-item>
             </v-list-item-content>
           </v-list-item>
         </v-card>
       </div>
-      <div class="col-4"></div>
     </div>
   </div>
 </template>
@@ -111,18 +174,7 @@ export default {
 p {
   padding: 10px;
 }
-#option {
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
+#option1 {
   list-style: none;
-}
-#option li {
-  padding-right: 20px;
-  list-style: thick;
-}
-#option li:before {
-  content: "✓";
-  padding-right: 5px;
 }
 </style>
