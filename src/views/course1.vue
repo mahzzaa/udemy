@@ -4,7 +4,7 @@
       <v-col col-sm-12 col-md-8 col-lg-8>
         <v-card>
           <v-container>
-            <div class="hidden-md-and-down">
+            <div class="hidden-md-and-up">
               <video-embed src="https://www.youtube.com/watch?v=s4ObxcdXoFE"></video-embed>
             </div>
             <ul class="listItem">
@@ -73,7 +73,11 @@
     <div class="row">
       <div class="col-sm-3">
         <v-card outlined class="mx-auto my-12" max-width="374">
-          <video-embed src="https://www.youtube.com/watch?v=s4ObxcdXoFE" width="374"></video-embed>
+          <video-embed
+            class="hidden-md-and-down"
+            src="https://www.youtube.com/watch?v=s4ObxcdXoFE"
+            width="374"
+          ></video-embed>
 
           <v-card-title>£59.99</v-card-title>
 
@@ -125,34 +129,98 @@
       </div>
       <div class="col-sm-9 mt-12">
         <v-card outlined>
-          <v-list-item three-line>
-            <v-list-item-content>
-              <v-list-item-title class="headline mb-1">What you'll learn</v-list-item-title>
-              <v-list-item>
-                <div>
-                  <div class="col-sm-6 col-xs-6">
-                    <i class="fas fa-check pr-3"></i>Which ASP .NET Core Project Is Best For You
-                  </div>
-                  <div class="col-sm-6 col-xs-6">
-                    <i class="fas fa-check pr-3"></i>MVC
-                  </div>
-                  <div class="col-sm-6 col-xs-6">
-                    <i class="fas fa-check pr-3"></i>Blazor Server
-                  </div>
-                  <div class="col-sm-6 col-xs-6">
-                    <i class="fas fa-check pr-3"></i>Razor Pages
-                  </div>
-                  <div class="col-sm-6 col-xs-6">
-                    <i class="fas fa-check pr-3"></i>API
-                  </div>
-                  <div class="col-sm-6 col-xs-6">
-                    <i class="fas fa-check pr-3"></i>Blazor Web Assembly / Client
-                  </div>
-                </div>
-              </v-list-item>
-            </v-list-item-content>
-          </v-list-item>
+          <p class="text-center" style="font-size:20px">What you'll learn</p>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class>
+                <i class="fas fa-check pr-3"></i>Which ASP .NET Core Project Is Best For You
+              </div>
+              <div class>
+                <i class="fas fa-check pr-3"></i>MVC
+              </div>
+              <div class>
+                <i class="fas fa-check pr-3"></i>Blazor Server
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class>
+                <i class="fas fa-check pr-3"></i>Razor Pages
+              </div>
+              <div class>
+                <i class="fas fa-check pr-3"></i>API
+              </div>
+              <div class>
+                <i class="fas fa-check pr-3"></i>Blazor Web Assembly / Client
+              </div>
+            </div>
+          </div>
         </v-card>
+
+        <v-card outlined class="mt-5">
+          <h2 class="pl-2 pt-2">Course content</h2>
+          <div class="row">
+            <div class="col-sm-6">11 sections • 93 lectures • 11h 51m total length</div>
+            <div class="col-sm-6">
+              <v-btn>Expand all sections</v-btn>
+            </div>
+          </div>
+          <v-expansion-panels>
+            <!-- <v-expansion-panel v-for="(item,i) in 5" :key="i">
+              <v-expansion-panel-header>Item</v-expansion-panel-header>
+              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
+            </v-expansion-panel>-->
+            <v-expansion-panel>
+              <v-expansion-panel-header>Item</v-expansion-panel-header>
+              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header>Item</v-expansion-panel-header>
+              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header>Item</v-expansion-panel-header>
+              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header>Item</v-expansion-panel-header>
+              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header>Item</v-expansion-panel-header>
+              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
+            </v-expansion-panel>
+            <v-expansion-panel>
+              <v-expansion-panel-header>Item</v-expansion-panel-header>
+              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
+            </v-expansion-panel>
+          </v-expansion-panels>
+        </v-card>
+
+        <div class="pt-5">
+          <h1 class="pb-3">Requirements</h1>
+          <ul>
+            <li class="pb-2">Understanding of C#</li>
+            <li class="pb-2">Basic knowledge of HTML</li>
+          </ul>
+        </div>
+
+        <div class="pt-5">
+          <h1>Description</h1>
+          <p>
+            With five major ASP.NET Core project types (Razor Pages, MVC, API, Bl
+            azor Server, and Blazor Web Assembly/Client), which one is right for your situation? Once you make a choice,
+            how do you get started? This course will answer those questions and more by giving a hands-on, real-world demonstrat
+            ion of each project type, comparing and contrasting the project types, and by creating five start to finish project
+            examples (one for each type) of full CRUD operations with SQL Server.
+          </p>
+        </div>
+
+        <div class="pt-5">
+          <h1 class="pb-3">Who this course is for:</h1>
+          <ul>
+            <li>People interested in C# web development</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
