@@ -70,6 +70,28 @@
         </v-card>
       </v-col>
     </v-row>
+    <div class="row">
+      <div class="col-8">
+        <v-card class="mx-auto" outlined>
+          <v-list-item three-line>
+            <v-list-item-content>
+              <v-list-item-title class="headline mb-1">What you'll learn</v-list-item-title>
+              <v-list-item>
+                <ul id="option">
+                  <li>Which ASP .NET Core Project Is Best For You</li>
+                  <li>MVC</li>
+                  <li>Blazor Server</li>
+                  <li>Razor Pages</li>
+                  <li>API</li>
+                  <li>Blazor Web Assembly / Client</li>
+                </ul>
+              </v-list-item>
+            </v-list-item-content>
+          </v-list-item>
+        </v-card>
+      </div>
+      <div class="col-4"></div>
+    </div>
   </div>
 </template>
 
@@ -88,5 +110,19 @@ export default {
 }
 p {
   padding: 10px;
+}
+#option {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  list-style: none;
+}
+#option li {
+  padding-right: 20px;
+  list-style: thick;
+}
+#option li:before {
+  content: "✓";
+  padding-right: 5px;
 }
 </style>
