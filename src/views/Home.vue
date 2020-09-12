@@ -1,7 +1,6 @@
 <template>
   <v-app id="inspire">
     <section id="sec-3"></section>
-
     <v-main>
       <v-container class="fill-height" fluid>
         <carousel />
@@ -16,10 +15,6 @@
         <pricing v-bind:prices="prices" />
       </v-container>
     </v-main>
-
-    <!-- <v-footer app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer> -->
   </v-app>
 </template>
 
