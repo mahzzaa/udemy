@@ -5,12 +5,13 @@ import About from '../views/About.vue'
 import course from '../views/course1.vue'
 import options from '../views/options.vue'
 import pricing from '../views/pricing.vue'
+import course1 from '../views/course1.vue'
 
 
 
 Vue.use(VueRouter)
 
-  const routes = [
+const routes = [
   {
     path: '/',
     name: 'Home',
@@ -36,6 +37,10 @@ Vue.use(VueRouter)
     path: '/pricing',
     name: 'pricing',
     component: pricing
+  },
+  {
+    path: '/course1/123',
+    component: course1
   }
 ]
 

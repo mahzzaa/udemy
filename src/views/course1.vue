@@ -71,7 +71,7 @@
       </v-col>
     </v-row>
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3 order-first">
         <v-card outlined class="mx-auto my-12" max-width="374">
           <video-embed
             class="hidden-md-and-down"
@@ -164,36 +164,15 @@
               <v-btn>Expand all sections</v-btn>
             </div>
           </div>
-          <v-expansion-panels>
-            <!-- <v-expansion-panel v-for="(item,i) in 5" :key="i">
-              <v-expansion-panel-header>Item</v-expansion-panel-header>
-              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
-            </v-expansion-panel>-->
-            <v-expansion-panel>
-              <v-expansion-panel-header>Item</v-expansion-panel-header>
-              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
-            </v-expansion-panel>
-            <v-expansion-panel>
-              <v-expansion-panel-header>Item</v-expansion-panel-header>
-              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
-            </v-expansion-panel>
-            <v-expansion-panel>
-              <v-expansion-panel-header>Item</v-expansion-panel-header>
-              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
-            </v-expansion-panel>
-            <v-expansion-panel>
-              <v-expansion-panel-header>Item</v-expansion-panel-header>
-              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
-            </v-expansion-panel>
-            <v-expansion-panel>
-              <v-expansion-panel-header>Item</v-expansion-panel-header>
-              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
-            </v-expansion-panel>
-            <v-expansion-panel>
-              <v-expansion-panel-header>Item</v-expansion-panel-header>
-              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
-            </v-expansion-panel>
-          </v-expansion-panels>
+
+          <div>
+            <v-expansion-panels v-model="panel" multiple>
+              <v-expansion-panel v-for="(item,i) in items" :key="i">
+                <v-expansion-panel-header>Header {{ item }}</v-expansion-panel-header>
+                <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
+              </v-expansion-panel>
+            </v-expansion-panels>
+          </div>
         </v-card>
 
         <div class="pt-5">
@@ -228,10 +207,24 @@
 
 <script>
 export default {
-  components: {},
-  data: () => ({
-    rating: 4.7,
-  }),
+  data() {
+    return {
+      panel: [],
+      items: 5,
+      rating: 4.7,
+    };
+  },
+  methods: {
+    // Create an array the length of our items
+    // with all values as true
+    all() {
+      this.panel = [...Array(this.items).keys()].map((k, i) => i);
+    },
+    // Reset the panel
+    none() {
+      this.panel = [];
+    },
+  },
 };
 </script>
 
