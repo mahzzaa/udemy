@@ -6,6 +6,7 @@ import course from '../views/course1.vue'
 import options from '../views/options.vue'
 import pricing from '../views/pricing.vue'
 import course1 from '../views/course1.vue'
+import id from '../components/id.vue'
 
 
 
@@ -39,8 +40,8 @@ const routes = [
     component: pricing
   },
   {
-    path: '/course1/123',
-    component: course1
+    path: '/course1/:id',
+    component: id
   }
 ]
 
