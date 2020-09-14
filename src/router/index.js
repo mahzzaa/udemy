@@ -7,6 +7,7 @@ import options from '../views/options.vue'
 import pricing from '../views/pricing.vue'
 import course1 from '../views/course1.vue'
 import id from '../components/id.vue'
+import notfound from '../components/notfound.vue'
 
 
 
@@ -42,7 +43,11 @@ const routes = [
   {
     path: '/course1/:id',
     component: id
-  }
+  },
+  {
+    path: '*',
+    component: notfound
+  }  
 ]
 
 const router = new VueRouter({
